@@ -1,15 +1,2 @@
-RewriteEngine on
-
-RewriteCond %{HTTPS} !=on
-RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-RewriteCond %{HTTP_HOST} !^www\.
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
-
-RewriteCond %{HTTP_HOST} ^(?:www\.)?pixelzone\.fr [NC]
-RewriteRule ^/?(.*) http://www.anthonycavalloni.fr/$1 [R=301,L]
-
-#ErrorDocument 404   /erreur-404.html
-
 ExpiresActive On
 ExpiresDefault "access plus 7200 seconds"
