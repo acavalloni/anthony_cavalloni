@@ -22,16 +22,18 @@
   // Sticky navigation on scroll
   const nav = document.querySelector('.navigation');
   const backTop = document.querySelector('.back-to-top');
-  const scrollLinks = document.querySelectorAll('.page-scroll');
+  const scrollEntries = Array.from(document.querySelectorAll('.page-scroll'))
+    .map(link => ({ link, target: document.querySelector(link.hash) }))
+    .filter(e => e.target);
 
-  const onScroll = () => {
+  let ticking = false;
+  const update = () => {
+    ticking = false;
     const y = window.scrollY;
     if (nav) nav.classList.toggle('sticky', y >= 10);
     if (backTop) backTop.classList.toggle('show', y > 600);
-    scrollLinks.forEach(link => {
-      const target = document.querySelector(link.hash);
-      if (!target) return;
-      const offset = target.getBoundingClientRect().top + window.scrollY - 73;
+    scrollEntries.forEach(({ link, target }) => {
+      const offset = target.getBoundingClientRect().top + y - 90;
       if (offset <= y) {
         link.parentElement.classList.add('active');
         Array.from(link.parentElement.parentElement.children).forEach(li => {
@@ -40,9 +42,15 @@
       }
     });
   };
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  };
   window.addEventListener('scroll', onScroll, { passive: true });
 
   // Modal (replaces magnific-popup)
+  let modalCounter = 0;
   const openModal = (targetId) => {
     const content = document.querySelector(targetId);
     if (!content) return;
@@ -51,7 +59,13 @@
     overlay.setAttribute('role', 'dialog');
     overlay.setAttribute('aria-modal', 'true');
     overlay.innerHTML = '<div class="modal-container"><button class="modal-close" aria-label="Fermer" type="button">&times;</button><div class="modal-body"></div></div>';
-    overlay.querySelector('.modal-body').innerHTML = content.innerHTML;
+    const body = overlay.querySelector('.modal-body');
+    body.innerHTML = content.innerHTML;
+    const heading = body.querySelector('h1, h2, h3, h4, h5, h6');
+    if (heading) {
+      const headingId = heading.id || (heading.id = `modal-title-${++modalCounter}`);
+      overlay.setAttribute('aria-labelledby', headingId);
+    }
     document.body.appendChild(overlay);
     document.body.style.overflow = 'hidden';
     requestAnimationFrame(() => overlay.classList.add('open'));
