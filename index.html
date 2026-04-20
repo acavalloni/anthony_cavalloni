@@ -24,36 +24,52 @@
     <!--====== LCP hero preload ======-->
     <link rel="preload" as="image" href="assets/images/banner/anthony_cavalloni.webp" media="(min-width: 992px)" fetchpriority="high">
 
-    <!--====== Icon font preload (breaks critical chain) ======-->
-    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/LineIcons.woff2?y2l643" crossorigin>
-
-    <!--====== Google Fonts Poppins (preconnect + async) ======-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"></noscript>
-
     <!--====== Critical CSS (inline) ======-->
-    <style>html{scroll-behavior:smooth;scroll-padding-top:90px}body a{color:#0a6e8f}body a:hover{color:#074d66}body{font-family:Poppins,sans-serif;font-weight:400;font-style:normal;color:#5a5f70;background-color:#fff}*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}img{max-width:100%;height:auto}a:focus,button:focus,input:focus,textarea:focus{text-decoration:none;outline:0}a:focus,a:hover{text-decoration:none}a,i,span{display:inline-block}h1,h2,h3,h4,h5,h6{font-family:Poppins,sans-serif;font-weight:600;color:#32333c;margin:0}h1{font-size:60px}h2{font-size:36px}h3{font-size:28px}h4{font-size:22px}h5{font-size:18px}h6{font-size:16px}ol,ul{margin:0;padding:0;list-style-type:none}p{font-size:16px;font-weight:400;line-height:28px;color:#5a5f70;margin:0}@media (max-width:767px){p{font-size:15px}}.bg_cover{background-position:center center;background-size:cover;background-repeat:no-repeat;width:100%;height:100%}.main-btn{display:inline-block;font-weight:500;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid #0a6e8f;padding:0 40px;font-size:15px;line-height:48px;border-radius:50px;color:#fff;cursor:pointer;z-index:5;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s;-webkit-box-shadow:0 5px 8px 0 rgba(110,110,110,.55);-moz-box-shadow:0 5px 8px 0 rgba(110,110,110,.55);box-shadow:0 5px 8px 0 rgba(110,110,110,.55);background-color:#0a6e8f;text-transform:uppercase}.main-btn:hover{background-color:#fff;color:#0a6e8f;border-color:#0a6e8f}.main-btn.main-btn-2{background-color:transparent;color:#fff;border-color:#fff;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.main-btn.main-btn-2:hover{background-color:#0a6e8f;color:#fff;border-color:#0a6e8f}.section-title .title{font-weight:700;font-size:45px;color:#000;padding-bottom:20px}@media (max-width:767px){.section-title .title{font-size:30px}}.navigation{-webkit-box-shadow:0 0 29px 0 rgba(134,134,134,.25);-moz-box-shadow:0 0 29px 0 rgba(134,134,134,.25);box-shadow:0 0 29px 0 rgba(134,134,134,.25);padding:30px 0;background-color:#fff;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}.navigation.sticky{padding:20px 0;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}.navigation .navbar{padding:0;position:relative}.navigation .navbar .navbar-brand{padding-top:0;padding-bottom:5px}.navigation .navbar .navbar-toggler{padding:2px 6px}.navigation .navbar .navbar-toggler .toggler-icon{width:30px;height:2px;background-color:#32333c;margin:5px 0;display:block;position:relative;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}.navigation .navbar .navbar-toggler.active .toggler-icon:first-of-type{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);top:7px}.navigation .navbar .navbar-toggler.active .toggler-icon:nth-of-type(2){opacity:0}.navigation .navbar .navbar-toggler.active .toggler-icon:nth-of-type(3){-webkit-transform:rotate(135deg);-moz-transform:rotate(135deg);-ms-transform:rotate(135deg);-o-transform:rotate(135deg);transform:rotate(135deg);top:-7px}@media only screen and (min-width:768px) and (max-width:991px){.navigation .navbar .navbar-collapse{position:absolute;top:158%;left:0;width:100%;background-color:#fff;z-index:99;-webkit-box-shadow:0 10px 15px 0 rgba(134,134,134,.15);-moz-box-shadow:0 10px 15px 0 rgba(134,134,134,.15);box-shadow:0 10px 15px 0 rgba(134,134,134,.15);padding:3px 12px}}@media (max-width:767px){.navigation .navbar .navbar-collapse{position:absolute;top:158%;left:0;width:100%;background-color:#fff;z-index:99;-webkit-box-shadow:0 10px 15px 0 rgba(134,134,134,.15);-moz-box-shadow:0 10px 15px 0 rgba(134,134,134,.15);box-shadow:0 10px 15px 0 rgba(134,134,134,.15);padding:3px 12px}}.navigation .navbar .navbar-nav .nav-item{margin-left:30px}@media only screen and (min-width:768px) and (max-width:991px){.navigation .navbar .navbar-nav .nav-item{margin:4px 0}}@media (max-width:767px){.navigation .navbar .navbar-nav .nav-item{margin:4px 0}}.navigation .navbar .navbar-nav .nav-item:first-child{margin-left:0}.navigation .navbar .navbar-nav .nav-item a{text-transform:uppercase;font-size:16px;color:#5a5f70;font-weight:500;position:relative;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}.navigation .navbar .navbar-nav .nav-item a::before{position:absolute;content:'';width:3px;height:0;background-color:#0a6e8f;left:50%;top:-50px;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}@media only screen and (min-width:768px) and (max-width:991px){.navigation .navbar .navbar-nav .nav-item a::before{display:none}}@media (max-width:767px){.navigation .navbar .navbar-nav .nav-item a::before{display:none}}.navigation .navbar .navbar-nav .nav-item.active a,.navigation .navbar .navbar-nav .nav-item:hover a{color:#0a6e8f}.navigation .navbar .navbar-nav .nav-item.active a::before,.navigation .navbar .navbar-nav .nav-item:hover a::before{height:45px}.header-content{height:730px;width:100%;margin-top:90px;position:relative;overflow:hidden;background-color:#fbfbfb}@media only screen and (min-width:768px) and (max-width:991px){.header-content{height:550px}}@media (max-width:767px){.header-content{height:550px}}.header-content .header-shape{position:absolute!important}.header-content .header-shape.shape-one{top:0!important;left:0!important}@media (max-width:767px){.header-content .header-shape.shape-one img{width:40px}}.header-content .header-shape.shape-tow{top:-18px!important;left:20%!important}@media (max-width:767px){.header-content .header-shape.shape-tow img{width:40px}}.header-content .header-shape.shape-three{top:0!important;left:40%!important}@media (max-width:767px){.header-content .header-shape.shape-three img{width:100px}}.header-content .header-shape.shape-fore{top:28px!important;right:7.6%!important;left:auto!important}@media (max-width:767px){.header-content .header-shape.shape-fore img{width:40px}}.header-content .header-shape.shape-five{right:30px!important;bottom:35%!important;left:auto!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-five{right:20px!important;bottom:48%!important}}@media (max-width:767px){.header-content .header-shape.shape-five img{width:40px}}.header-content .header-shape.shape-six{top:44%!important;left:13%!important;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}@media (max-width:767px){.header-content .header-shape.shape-six img{width:40px}}.header-content .header-shape.shape-seven{left:30px!important;bottom:50px!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-seven{left:15px!important;bottom:25px!important}}@media (max-width:767px){.header-content .header-shape.shape-seven img{width:100px}}.header-content .header-shape.shape-eight{left:90px!important;bottom:140px!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-eight{left:50px!important;bottom:70px!important}}@media (max-width:767px){.header-content .header-shape.shape-eight img{width:100px}}.header-content .header-shape.shape-nine{left:50%!important;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);bottom:28px!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-nine{left:65%!important;bottom:20px!important}}@media (max-width:767px){.header-content .header-shape.shape-nine img{width:100px}}.header-content .header-shape.shape-ten{right:30px!important;bottom:5px!important;left:auto!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-ten{right:0!important;bottom:140px!important}}@media (max-width:767px){.header-content .header-shape.shape-ten img{width:100px}}.header-content-right{position:relative}.header-content-right .sub-title{font-size:30px;color:#0a6e8f;text-transform:uppercase;padding-bottom:15px}@media (max-width:767px){.header-content-right .sub-title{font-size:24px}}.header-content-right .title{font-size:60px;text-transform:uppercase;padding-bottom:15px}@media (max-width:767px){.header-content-right .title{font-size:38px}}.header-content-right p{padding-bottom:40px}.header-image{max-width:430px;margin:0 auto;position:relative}.header-image::before{position:absolute;content:'';width:100%;height:82%;border:20px solid #0a6e8f;border-bottom:0;top:50%;left:0;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}.header-image::after{position:absolute;content:'';width:100%;height:20px;background-color:#0a6e8f;left:0;bottom:58px;z-index:11}.header-image img{position:relative;z-index:5}.header-social{position:absolute;bottom:30px;left:15px;width:100%}.header-social .header-social-icon{position:relative}.header-social .header-social-icon::before{position:absolute;content:'';width:100%;height:2px;background-color:#0a6e8f;left:-102.5%;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}.header-social .header-social-icon ul li{display:inline-block;margin-left:13px}.header-social .header-social-icon ul li:first-child{margin-left:0}.header-social .header-social-icon ul li a{color:#707070;font-size:20px;width:40px;height:40px;line-height:40px;border-radius:50%;border:1px solid #707070;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s;text-align:center}.header-social .header-social-icon ul li a:hover{color:#fff;background-color:#0a6e8f;border-color:#0a6e8f}</style>
+    <style>html{scroll-behavior:smooth;scroll-padding-top:90px}body a{color:#0a6e8f;text-decoration:none}body a:hover{color:#074d66}.icon{width:1em;height:1em;fill:currentColor;stroke:currentColor;vertical-align:-.125em;flex-shrink:0;display:inline-block}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:400;font-style:normal;color:#5a5f70;background-color:#fff}*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}img{max-width:100%;height:auto}a:focus,button:focus,input:focus,textarea:focus{text-decoration:none;outline:0}a:focus,a:hover{text-decoration:none}a,i,span{display:inline-block}h1,h2,h3,h4,h5,h6{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:600;color:#32333c;margin:0}h1{font-size:60px}h2{font-size:36px}h3{font-size:28px}h4{font-size:22px}h5{font-size:18px}h6{font-size:16px}ol,ul{margin:0;padding:0;list-style-type:none}p{font-size:16px;font-weight:400;line-height:28px;color:#5a5f70;margin:0}@media (max-width:767px){p{font-size:15px}}.bg_cover{background-position:center center;background-size:cover;background-repeat:no-repeat;width:100%;height:100%}.main-btn{display:inline-block;font-weight:500;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid #0a6e8f;padding:0 40px;font-size:15px;line-height:48px;border-radius:50px;color:#fff;cursor:pointer;z-index:5;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s;-webkit-box-shadow:0 5px 8px 0 rgba(110,110,110,.55);-moz-box-shadow:0 5px 8px 0 rgba(110,110,110,.55);box-shadow:0 5px 8px 0 rgba(110,110,110,.55);background-color:#0a6e8f;text-transform:uppercase}.main-btn:hover{background-color:#fff;color:#0a6e8f;border-color:#0a6e8f}.main-btn.main-btn-2{background-color:transparent;color:#fff;border-color:#fff;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}.main-btn.main-btn-2:hover{background-color:#0a6e8f;color:#fff;border-color:#0a6e8f}.section-title .title{font-weight:700;font-size:45px;color:#000;padding-bottom:20px}@media (max-width:767px){.section-title .title{font-size:30px}}.navigation{-webkit-box-shadow:0 0 29px 0 rgba(134,134,134,.25);-moz-box-shadow:0 0 29px 0 rgba(134,134,134,.25);box-shadow:0 0 29px 0 rgba(134,134,134,.25);padding:30px 0;background-color:#fff;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}.navigation.sticky{padding:20px 0;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}.navigation .navbar{padding:0;position:relative}.navigation .navbar .navbar-brand{padding-top:0;padding-bottom:5px}.navigation .navbar .navbar-toggler{padding:2px 6px}.navigation .navbar .navbar-toggler .toggler-icon{width:30px;height:2px;background-color:#32333c;margin:5px 0;display:block;position:relative;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}.navigation .navbar .navbar-toggler.active .toggler-icon:first-of-type{-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);top:7px}.navigation .navbar .navbar-toggler.active .toggler-icon:nth-of-type(2){opacity:0}.navigation .navbar .navbar-toggler.active .toggler-icon:nth-of-type(3){-webkit-transform:rotate(135deg);-moz-transform:rotate(135deg);-ms-transform:rotate(135deg);-o-transform:rotate(135deg);transform:rotate(135deg);top:-7px}@media only screen and (min-width:768px) and (max-width:991px){.navigation .navbar .navbar-collapse{position:absolute;top:158%;left:0;width:100%;background-color:#fff;z-index:99;-webkit-box-shadow:0 10px 15px 0 rgba(134,134,134,.15);-moz-box-shadow:0 10px 15px 0 rgba(134,134,134,.15);box-shadow:0 10px 15px 0 rgba(134,134,134,.15);padding:3px 12px}}@media (max-width:767px){.navigation .navbar .navbar-collapse{position:absolute;top:158%;left:0;width:100%;background-color:#fff;z-index:99;-webkit-box-shadow:0 10px 15px 0 rgba(134,134,134,.15);-moz-box-shadow:0 10px 15px 0 rgba(134,134,134,.15);box-shadow:0 10px 15px 0 rgba(134,134,134,.15);padding:3px 12px}}.navigation .navbar .navbar-nav .nav-item{margin-left:30px}@media only screen and (min-width:768px) and (max-width:991px){.navigation .navbar .navbar-nav .nav-item{margin:4px 0}}@media (max-width:767px){.navigation .navbar .navbar-nav .nav-item{margin:4px 0}}.navigation .navbar .navbar-nav .nav-item:first-child{margin-left:0}.navigation .navbar .navbar-nav .nav-item a{text-transform:uppercase;font-size:16px;color:#5a5f70;font-weight:500;position:relative;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}.navigation .navbar .navbar-nav .nav-item a::before{position:absolute;content:'';width:3px;height:0;background-color:#0a6e8f;left:50%;top:-50px;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s}@media only screen and (min-width:768px) and (max-width:991px){.navigation .navbar .navbar-nav .nav-item a::before{display:none}}@media (max-width:767px){.navigation .navbar .navbar-nav .nav-item a::before{display:none}}.navigation .navbar .navbar-nav .nav-item.active a,.navigation .navbar .navbar-nav .nav-item:hover a{color:#0a6e8f}.navigation .navbar .navbar-nav .nav-item.active a::before,.navigation .navbar .navbar-nav .nav-item:hover a::before{height:45px}.header-content{height:730px;width:100%;margin-top:90px;position:relative;overflow:hidden;background-color:#fbfbfb}@media only screen and (min-width:768px) and (max-width:991px){.header-content{height:550px}}@media (max-width:767px){.header-content{height:550px}}.header-content .header-shape{position:absolute!important}.header-content .header-shape.shape-one{top:0!important;left:0!important}@media (max-width:767px){.header-content .header-shape.shape-one img{width:40px}}.header-content .header-shape.shape-tow{top:-18px!important;left:20%!important}@media (max-width:767px){.header-content .header-shape.shape-tow img{width:40px}}.header-content .header-shape.shape-three{top:0!important;left:40%!important}@media (max-width:767px){.header-content .header-shape.shape-three img{width:100px}}.header-content .header-shape.shape-fore{top:28px!important;right:7.6%!important;left:auto!important}@media (max-width:767px){.header-content .header-shape.shape-fore img{width:40px}}.header-content .header-shape.shape-five{right:30px!important;bottom:35%!important;left:auto!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-five{right:20px!important;bottom:48%!important}}@media (max-width:767px){.header-content .header-shape.shape-five img{width:40px}}.header-content .header-shape.shape-six{top:44%!important;left:13%!important;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}@media (max-width:767px){.header-content .header-shape.shape-six img{width:40px}}.header-content .header-shape.shape-seven{left:30px!important;bottom:50px!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-seven{left:15px!important;bottom:25px!important}}@media (max-width:767px){.header-content .header-shape.shape-seven img{width:100px}}.header-content .header-shape.shape-eight{left:90px!important;bottom:140px!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-eight{left:50px!important;bottom:70px!important}}@media (max-width:767px){.header-content .header-shape.shape-eight img{width:100px}}.header-content .header-shape.shape-nine{left:50%!important;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);bottom:28px!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-nine{left:65%!important;bottom:20px!important}}@media (max-width:767px){.header-content .header-shape.shape-nine img{width:100px}}.header-content .header-shape.shape-ten{right:30px!important;bottom:5px!important;left:auto!important;top:auto!important}@media (max-width:767px){.header-content .header-shape.shape-ten{right:0!important;bottom:140px!important}}@media (max-width:767px){.header-content .header-shape.shape-ten img{width:100px}}.header-content-right{position:relative}.header-content-right .sub-title{font-size:30px;color:#0a6e8f;text-transform:uppercase;padding-bottom:15px}@media (max-width:767px){.header-content-right .sub-title{font-size:24px}}.header-content-right .title{font-size:60px;text-transform:uppercase;padding-bottom:15px}@media (max-width:767px){.header-content-right .title{font-size:38px}}.header-content-right p{padding-bottom:40px}.header-image{max-width:430px;margin:0 auto;position:relative}.header-image::before{position:absolute;content:'';width:100%;height:82%;border:20px solid #0a6e8f;border-bottom:0;top:50%;left:0;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}.header-image::after{position:absolute;content:'';width:100%;height:20px;background-color:#0a6e8f;left:0;bottom:58px;z-index:11}.header-image img{position:relative;z-index:5}.header-social{position:absolute;bottom:30px;left:15px;width:100%}.header-social .header-social-icon{position:relative}.header-social .header-social-icon::before{position:absolute;content:'';width:100%;height:2px;background-color:#0a6e8f;left:-102.5%;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}.header-social .header-social-icon ul li{display:inline-block;margin-left:13px}.header-social .header-social-icon ul li:first-child{margin-left:0}.header-social .header-social-icon ul li a{color:#707070;font-size:20px;width:40px;height:40px;line-height:40px;border-radius:50%;border:1px solid #707070;-webkit-transition:all .3s ease-out 0s;-moz-transition:all .3s ease-out 0s;-ms-transition:all .3s ease-out 0s;-o-transition:all .3s ease-out 0s;transition:all .3s ease-out 0s;text-align:center}.header-social .header-social-icon ul li a:hover{color:#fff;background-color:#0a6e8f;border-color:#0a6e8f}</style>
 
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--====== Layout css (grid + utilities) ======-->
+    <link rel="stylesheet" href="assets/css/layout.css">
 
     <!--====== Style css non-critical (async) ======-->
     <link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
 
-    <!--====== Line Icons css (async, non-critical) ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="assets/css/LineIcons.css"></noscript>
-
 
 </head>
 
 <body>
+
+    <!--====== SVG Icon sprite ======-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+        <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18.338V9.75H5.671v8.588h2.668zm-1.334-9.762c.856 0 1.549-.696 1.549-1.553 0-.857-.693-1.553-1.549-1.553s-1.548.696-1.548 1.553c0 .857.692 1.553 1.548 1.553zm11.333 9.762v-4.705c0-2.312-.5-4.09-3.202-4.09-1.3 0-2.172.714-2.528 1.39h-.036V9.75h-2.56v8.588h2.665V14.09c0-1.12.213-2.205 1.6-2.205 1.369 0 1.387 1.28 1.387 2.277v4.176h2.674z"/></symbol>
+        <symbol id="i-twitter" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.849.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.849.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></symbol>
+        <symbol id="i-spotify" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12A12 12 0 0012 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></symbol>
+        <symbol id="i-game" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13"/><line x1="18" y1="11" x2="18.01" y2="11"/><rect x="2" y="6" width="20" height="12" rx="2"/></symbol>
+        <symbol id="i-zoom-in" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></symbol>
+        <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+        <symbol id="i-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></symbol>
+        <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+        <symbol id="i-envelope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+        <symbol id="i-phone-handset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+        <symbol id="i-map-marker" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+        <symbol id="i-bi-cycle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></symbol>
+        <symbol id="i-travel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+        <symbol id="i-night" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+        <symbol id="i-harddrive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="12" x2="2" y2="12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" y1="16" x2="6.01" y2="16"/><line x1="10" y1="16" x2="10.01" y2="16"/></symbol>
+        <symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-.9 1.7-2.3 2-4.1-2.2-.4-3.4.3-4.2 1.5z"/></symbol>
+        <symbol id="i-bitbucket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-2 13H6L4 7z"/><path d="M4 7l2-4h12l2 4"/></symbol>
+        <symbol id="i-code-alt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+        <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+        <symbol id="i-construction" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12l-8.5 8.5a2.12 2.12 0 1 1-3-3L12 9"/><path d="M17.64 15L22 10.64"/><path d="M20.91 11.7l-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"/></symbol>
+        <symbol id="i-customer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></symbol>
+        <symbol id="i-website" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+        <symbol id="i-direction-alt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></symbol>
+        <symbol id="i-chevron-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></symbol>
+    </svg>
 
     <!--====== HEADER PART START ======-->
 
@@ -143,12 +159,12 @@
                         <div class="col-lg-12">
                             <div class="header-social-icon">
                                 <ul>
-                                    <li><a href="https://www.linkedin.com/in/anthonycavalloni/" aria-label="LinkedIn" rel="noopener"><i class="lni-linkedin-original" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://twitter.com/Gugulito_fr" aria-label="Twitter" rel="noopener"><i class="lni-twitter-original" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://github.com/gugul" aria-label="GitHub" rel="noopener"><i class="lni-github-original" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.instagram.com/gugulito69/" aria-label="Instagram" rel="noopener"><i class="lni-instagram-original" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.psthc.fr/profil-psn-Gugulito.htm" aria-label="Profil PSN" rel="noopener"><i class="lni-game" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://open.spotify.com/playlist/1IXLL2IR5UKmJcnIMZHQyR?si=dLfv4WkcTTSU0nn0tFEuKA" aria-label="Playlist Spotify" rel="noopener"><i class="lni-spotify-original" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/anthonycavalloni/" aria-label="LinkedIn" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+                                    <li><a href="https://twitter.com/Gugulito_fr" aria-label="Twitter" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-twitter"/></svg></a></li>
+                                    <li><a href="https://github.com/gugul" aria-label="GitHub" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+                                    <li><a href="https://www.instagram.com/gugulito69/" aria-label="Instagram" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+                                    <li><a href="https://www.psthc.fr/profil-psn-Gugulito.htm" aria-label="Profil PSN" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-game"/></svg></a></li>
+                                    <li><a href="https://open.spotify.com/playlist/1IXLL2IR5UKmJcnIMZHQyR?si=dLfv4WkcTTSU0nn0tFEuKA" aria-label="Playlist Spotify" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-spotify"/></svg></a></li>
                                 </ul>
                             </div> <!-- header social -->
                         </div>
@@ -185,7 +201,7 @@
                             <li>
                                 <div class="single-info d-flex align-items-center">
                                     <div class="info-icon">
-                                        <i class="lni-calendar"></i>
+                                        <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
                                     </div>
                                     <div class="info-text">
                                         <p><span>Depuis :</span> Février 1990</p>
@@ -195,27 +211,27 @@
                             <li>
                                 <div class="single-info d-flex align-items-center">
                                     <div class="info-icon">
-                                        <i class="lni-envelope"></i>
+                                        <svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Email :</span> <script>document.write('a'+'n'+'t'+'h'+'o'+'n'+'y'+'@'+'p'+'i'+'x'+'e'+'l'+'z'+'o'+'n'+'e'+'.'+'f'+'r');</script><noscript>Turn on JavaScript to see the email address</noscript></p>
+                                        <p><span>Email :</span> <a href="mailto:bonjour@anthonycavalloni.fr">bonjour@anthonycavalloni.fr</a></p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
                             <li>
                                 <div class="single-info d-flex align-items-center">
                                     <div class="info-icon">
-                                        <i class="lni-phone-handset"></i>
+                                        <svg class="icon" aria-hidden="true"><use href="#i-phone-handset"/></svg>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Téléphone :</span> <script>document.write('0'+'6'+'2'+'9'+'7'+'4'+'4'+'4'+'2'+'6');</script><noscript>Turn on JavaScript to see the phone</noscript></p>
+                                        <p><span>Téléphone :</span> <a href="tel:+33629744426">06 29 74 44 26</a></p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
                             <li>
                                 <div class="single-info d-flex align-items-center">
                                     <div class="info-icon">
-                                        <i class="lni-map-marker"></i>
+                                        <svg class="icon" aria-hidden="true"><use href="#i-map-marker"/></svg>
                                     </div>
                                     <div class="info-text">
                                         <p><span>Adresse :</span> Lyon, FRANCE</p>
@@ -315,7 +331,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-service text-center mt-30">
                         <div class="service-icon">
-                            <i class="lni-code-alt"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-code-alt"/></svg>
                         </div>
                         <div class="service-content">
                             <h3 class="service-title"><a href="#work" class="page-scroll">Développement web</a></h3>
@@ -326,7 +342,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-service text-center mt-30">
                         <div class="service-icon">
-                            <i class="lni-book"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>
                         </div>
                         <div class="service-content">
                             <h3 class="service-title"><a href="#work" class="page-scroll">Besoins, métiers & MOA</a></h3>
@@ -337,7 +353,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-service text-center mt-30">
                         <div class="service-icon">
-                            <i class="lni-construction"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-construction"/></svg>
                         </div>
                         <div class="service-content">
                             <h3 class="service-title"><a href="#work" class="page-scroll">App Design complexe</a></h3>
@@ -348,7 +364,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-service text-center mt-30">
                         <div class="service-icon">
-                            <i class="lni-customer"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-customer"/></svg>
                         </div>
                         <div class="service-content">
                             <h3 class="service-title"><a href="#work" class="page-scroll">Facilitation</a></h3>
@@ -359,7 +375,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-service text-center mt-30">
                         <div class="service-icon">
-                            <i class="lni-website"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-website"/></svg>
                         </div>
                         <div class="service-content">
                             <h3 class="service-title"><a href="#work" class="page-scroll">Conception & bons usages</a></h3>
@@ -370,7 +386,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-service text-center mt-30">
                         <div class="service-icon">
-                            <i class="lni-direction-alt"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-direction-alt"/></svg>
                         </div>
                         <div class="service-content">
                             <h3 class="service-title"><a href="#work" class="page-scroll">Transversalité</a></h3>
@@ -430,8 +446,8 @@
                                 <h3 class="work-title">OVHcloud Websites</h3>
                                 <h4 class="work-title"><i>Prestation puis interne</i></h4>
                                 <ul>
-                                    <li><a class="text-popup" href="#text-ovh" aria-label="Détails OVHcloud Websites"><i class="lni-zoom-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.ovh.com/" aria-label="Site OVH" rel="noopener"><i class="lni-link" aria-hidden="true"></i></a></li>
+                                    <li><a class="text-popup" href="#text-ovh" aria-label="Détails OVHcloud Websites"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></a></li>
+                                    <li><a href="https://www.ovh.com/" aria-label="Site OVH" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></li>
                                 </ul>
                                 <div id="text-ovh" class="zoom-anim-dialog mfp-hide white-popup">
                                     <h5>Scrum master and Project manager</h5>
@@ -475,8 +491,8 @@
                                 <h3 class="work-title">Orange (applis internes)</h3>
                                 <h4 class="work-title"><i>Prestation</i></h4>
                                 <ul>
-                                    <li><a class="text-popup" href="#text-orange" aria-label="Détails Orange"><i class="lni-zoom-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.orange.fr/" aria-label="Site Orange" rel="noopener"><i class="lni-link" aria-hidden="true"></i></a></li>
+                                    <li><a class="text-popup" href="#text-orange" aria-label="Détails Orange"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></a></li>
+                                    <li><a href="https://www.orange.fr/" aria-label="Site Orange" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></li>
                                 </ul>
                                 <div id="text-orange" class="zoom-anim-dialog mfp-hide white-popup">
                                     <h5>Chef de projet transverse et Scrum Master</h5>
@@ -518,8 +534,8 @@
                                 <h3 class="work-title">Prosper en affaires</h3>
                                 <h4 class="work-title"><i>With agence @Acti</i></h4>
                                 <ul>
-                                    <li><a class="text-popup" href="#text-prosper" aria-label="Détails Prosper en affaires"><i class="lni-zoom-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.prosperenaffaires.fr/" aria-label="Site Prosper en affaires" rel="noopener"><i class="lni-link" aria-hidden="true"></i></a></li>
+                                    <li><a class="text-popup" href="#text-prosper" aria-label="Détails Prosper en affaires"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></a></li>
+                                    <li><a href="https://www.prosperenaffaires.fr/" aria-label="Site Prosper en affaires" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></li>
                                 </ul>
                                 <div id="text-prosper" class="zoom-anim-dialog mfp-hide white-popup">
                                     <h5>Pilote de projet</h5>
@@ -549,8 +565,8 @@
                                 <h3 class="work-title">Capifrance</h3>
                                 <h4 class="work-title"><i>With agence @C2iS</i></h4>
                                 <ul>
-                                    <li><a class="text-popup" href="#text-capifrance" aria-label="Détails Capifrance"><i class="lni-zoom-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.capifrance.fr/" aria-label="Site Capifrance" rel="noopener"><i class="lni-link" aria-hidden="true"></i></a></li>
+                                    <li><a class="text-popup" href="#text-capifrance" aria-label="Détails Capifrance"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></a></li>
+                                    <li><a href="https://www.capifrance.fr/" aria-label="Site Capifrance" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></li>
                                 </ul>
                                 <div id="text-capifrance" class="zoom-anim-dialog mfp-hide white-popup">
                                     <h5>Digital Project Manager</h5>
@@ -582,8 +598,8 @@
                                 <h3 class="work-title">Flower campings</h3>
                                 <h4 class="work-title"><i>With agence @C2iS</i></h4>
                                 <ul>
-                                    <li><a class="text-popup" href="#text-flower" aria-label="Détails Flower campings"><i class="lni-zoom-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.flowercampings.com/" aria-label="Site Flower campings" rel="noopener"><i class="lni-link" aria-hidden="true"></i></a></li>
+                                    <li><a class="text-popup" href="#text-flower" aria-label="Détails Flower campings"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></a></li>
+                                    <li><a href="https://www.flowercampings.com/" aria-label="Site Flower campings" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></li>
                                 </ul>
                                 <div id="text-flower" class="zoom-anim-dialog mfp-hide white-popup">
                                     <h5>Digital Project Manager</h5>
@@ -615,8 +631,8 @@
                                 <h3 class="work-title">Cinéma Pathe Gaumont</h3>
                                 <h4 class="work-title"><i>Interne</i></h4>
                                 <ul>
-                                    <li><a class="text-popup" href="#text-cpg" aria-label="Détails Cinémas Pathé Gaumont"><i class="lni-zoom-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.cinemaspathegaumont.com/" aria-label="Site Cinémas Pathé Gaumont" rel="noopener"><i class="lni-link" aria-hidden="true"></i></a></li>
+                                    <li><a class="text-popup" href="#text-cpg" aria-label="Détails Cinémas Pathé Gaumont"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></a></li>
+                                    <li><a href="https://www.cinemaspathegaumont.com/" aria-label="Site Cinémas Pathé Gaumont" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></li>
                                 </ul>
                                 <div id="text-cpg" class="zoom-anim-dialog mfp-hide white-popup">
                                     <h5>Digital Product Manager</h5>
@@ -640,8 +656,8 @@
                                 <h3 class="work-title">Appart'city</h3>
                                 <h4 class="work-title"><i>With agence @C2iS</i></h4>
                                 <ul>
-                                    <li><a class="text-popup" href="#text-appartcity" aria-label="Détails Appart'city"><i class="lni-zoom-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.appartcity.com/fr/" aria-label="Site Appart'city" rel="noopener"><i class="lni-link" aria-hidden="true"></i></a></li>
+                                    <li><a class="text-popup" href="#text-appartcity" aria-label="Détails Appart'city"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></a></li>
+                                    <li><a href="https://www.appartcity.com/fr/" aria-label="Site Appart'city" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></li>
                                 </ul>
                                 <div id="text-appartcity" class="zoom-anim-dialog mfp-hide white-popup">
                                     <h5>Digital Project Manager</h5>
@@ -673,8 +689,8 @@
                                 <h3 class="work-title">Faguo</h3>
                                 <h4 class="work-title"><i>With agence @Mevia</i></h4>
                                 <ul>
-                                    <li><a class="text-popup" href="#text-faguo" aria-label="Détails Faguo"><i class="lni-zoom-in" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.faguo-store.com/" aria-label="Site Faguo" rel="noopener"><i class="lni-link" aria-hidden="true"></i></a></li>
+                                    <li><a class="text-popup" href="#text-faguo" aria-label="Détails Faguo"><svg class="icon" aria-hidden="true"><use href="#i-zoom-in"/></svg></a></li>
+                                    <li><a href="https://www.faguo-store.com/" aria-label="Site Faguo" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></li>
                                 </ul>
                                 <div id="text-faguo" class="zoom-anim-dialog mfp-hide white-popup">
                                     <h5>Chef de projet digital & Chef de produit</h5>
@@ -705,7 +721,7 @@
                                 <h3 class="work-title">Votre projet ?</h3>
                                 <ul>
                                     <!--<li><a class="image-popup" href="assets/images/work/w-8.webp"><i class="lni-plus"></i></a></li>-->
-                                    <li><a href="mailto:bonjour@anthonycavalloni.fr?subject=Bonjour%20Anthony%20!" aria-label="Écrire un email"><i class="lni-pencil" aria-hidden="true"></i></a></li>
+                                    <li><a href="mailto:bonjour@anthonycavalloni.fr?subject=Bonjour%20Anthony%20!" aria-label="Écrire un email"><svg class="icon" aria-hidden="true"><use href="#i-pencil"/></svg></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -839,7 +855,7 @@
                             </a>
                         </div>
                         <div class="blog-content">
-                            <h3 class="blog-title"><a class="text-popup" href="#text-cyclisme">Le cyclisme <i class="lni-bi-cycle"></i></a></h3>
+                            <h3 class="blog-title"><a class="text-popup" href="#text-cyclisme">Le cyclisme <svg class="icon" aria-hidden="true"><use href="#i-bi-cycle"/></svg></a></h3>
                             <div id="text-cyclisme" class="zoom-anim-dialog mfp-hide white-popup">
                                 <h4>Le cyclisme</h4>
                                 <p>Je suis passionné de vélo. Que ce soit pour les vacances, pour aller au travail, en été comme en hiver, cela fait plus de 6 ans que mon moyen de transport principal est le vélo.</p>
@@ -856,7 +872,7 @@
                             </a>
                         </div>
                         <div class="blog-content">
-                            <h3 class="blog-title"><a class="text-popup" href="#text-jeuvideo">Le jeu vidéo <i class="lni-game"></i></a></h3>
+                            <h3 class="blog-title"><a class="text-popup" href="#text-jeuvideo">Le jeu vidéo <svg class="icon" aria-hidden="true"><use href="#i-game"/></svg></a></h3>
                             <div id="text-jeuvideo" class="zoom-anim-dialog mfp-hide white-popup">
                                 <h4>Le jeu vidéo</h4>
                                 <p>Je suis un gros joueur. C'est un de mes loisirs favoris.<br />
@@ -875,7 +891,7 @@
                             </a>
                         </div>
                         <div class="blog-content">
-                            <h3 class="blog-title"><a class="text-popup" href="#text-voyage">Le voyage <i class="lni-travel"></i></a></h3>
+                            <h3 class="blog-title"><a class="text-popup" href="#text-voyage">Le voyage <svg class="icon" aria-hidden="true"><use href="#i-travel"/></svg></a></h3>
                             <div id="text-voyage" class="zoom-anim-dialog mfp-hide white-popup">
                                 <h4>Le voyage</h4>
                                 <p>Un mois au Nicaragua, en Corée du sud, en Hongrie, au Canada ou au Portugal...<br />
@@ -893,7 +909,7 @@
                             </a>
                         </div>
                         <div class="blog-content">
-                            <h3 class="blog-title"><a class="text-popup" href="#text-darkfantasy">La dark fantasy <i class="lni-night"></i></a></h3>
+                            <h3 class="blog-title"><a class="text-popup" href="#text-darkfantasy">La dark fantasy <svg class="icon" aria-hidden="true"><use href="#i-night"/></svg></a></h3>
                             <div id="text-darkfantasy" class="zoom-anim-dialog mfp-hide white-popup">
                                 <h4>La dark fantasy</h4>
                                 <p>J'ai commencé à découvrir l'étendu de la dark fantasy vers 15 ans. Aujourd'hui, j'en apprends tous les jours, et je ne cesse de découvrir des univers toujours plus incroyables et profonds.<br />
@@ -911,7 +927,7 @@
                             </a>
                         </div>
                         <div class="blog-content">
-                            <h3 class="blog-title"><a class="text-popup" href="#text-electronique">L'électronique <i class="lni-harddrive"></i></a></h3>
+                            <h3 class="blog-title"><a class="text-popup" href="#text-electronique">L'électronique <svg class="icon" aria-hidden="true"><use href="#i-harddrive"/></svg></a></h3>
                             <div id="text-electronique" class="zoom-anim-dialog mfp-hide white-popup">
                                 <h4>L'électronique</h4>
                                 <p>Tout commença par un écran de PC qui clignotait pendant 10 minutes à l'allumage. Renseignements pris, tutos, et le jour J, on ouvre la machine pour remplacer des condensateurs ayants mal vieillis.<br />
@@ -929,7 +945,7 @@
                             </a>
                         </div>
                         <div class="blog-content">
-                            <h3 class="blog-title"><a class="text-popup" href="#text-botanique">La botanique <i class="lni-sprout"></i></a></h3>
+                            <h3 class="blog-title"><a class="text-popup" href="#text-botanique">La botanique <svg class="icon" aria-hidden="true"><use href="#i-sprout"/></svg></a></h3>
                             <div id="text-botanique" class="zoom-anim-dialog mfp-hide white-popup">
                                 <h4>La botanique</h4>
                                 <p>Coming soon</p>
@@ -946,7 +962,7 @@
                             </a>
                         </div>
                         <div class="blog-content">
-                            <h3 class="blog-title"><a class="text-popup" href="#text-brassage">Le brassage <i class="lni-bitbucket"></i></a></h3>
+                            <h3 class="blog-title"><a class="text-popup" href="#text-brassage">Le brassage <svg class="icon" aria-hidden="true"><use href="#i-bitbucket"/></svg></a></h3>
                             <div id="text-brassage" class="zoom-anim-dialog mfp-hide white-popup">
                                 <h4>Le brassage</h4>
                                 <p>Coming soon</p>
@@ -963,7 +979,7 @@
                             </a>
                         </div>
                         <div class="blog-content">
-                            <h3 class="blog-title"><a class="text-popup" href="#text-maraude">La maraude <i class="lni-heart"></i></a></h3>
+                            <h3 class="blog-title"><a class="text-popup" href="#text-maraude">La maraude <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></a></h3>
                             <div id="text-maraude" class="zoom-anim-dialog mfp-hide white-popup">
                                 <h4>La maraude</h4>
                                 <p>Coming soon</p>
@@ -1001,7 +1017,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-7">
                     <div class="contact-box text-center mt-30">
                         <div class="contact-icon">
-                            <i class="lni-map-marker"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-map-marker"/></svg>
                         </div>
                         <div class="contact-content">
                             <h3 class="contact-title">Adresse</h3>
@@ -1012,22 +1028,22 @@
                 <div class="col-lg-4 col-md-6 col-sm-7">
                     <div class="contact-box text-center mt-30">
                         <div class="contact-icon">
-                            <i class="lni-phone"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
                         </div>
                         <div class="contact-content">
                             <h3 class="contact-title">Téléphone</h3>
-                            <p><script>document.write('0'+'6'+'2'+'9'+'7'+'4'+'4'+'4'+'2'+'6');</script><noscript>Turn on JavaScript to see the phone</noscript></p>
+                            <p><a href="tel:+33629744426">06 29 74 44 26</a></p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-7">
                     <div class="contact-box text-center mt-30">
                         <div class="contact-icon">
-                            <i class="lni-envelope"></i>
+                            <svg class="icon" aria-hidden="true"><use href="#i-envelope"/></svg>
                         </div>
                         <div class="contact-content">
                             <h3 class="contact-title">Email</h3>
-                            <p><script>document.write('b'+'o'+'n'+'j'+'o'+'u'+'r'+'@'+'a'+'n'+'t'+'h'+'o'+'n'+'y'+'c'+'a'+'v'+'a'+'l'+'l'+'o'+'n'+'i'+'.'+'f'+'r');</script><noscript>Turn on JavaScript to see the email address</noscript></p>
+                            <p><a href="mailto:bonjour@anthonycavalloni.fr">bonjour@anthonycavalloni.fr</a></p>
                         </div>
                     </div> <!-- contact box -->
                 </div>
@@ -1054,12 +1070,12 @@
                                 Ce site est <a href="https://html5.validator.nu/?doc=https%3A%2F%2Fwww.anthonycavalloni.fr" rel="noopener">100% HTML5 + ARIA compliant</a> et dispose d'un score de <a href="https://developers.google.com/speed/pagespeed/insights/?hl=fr&url=https%3A%2F%2Fwww.anthonycavalloni.fr%2F" rel="noopener">98+ sur Page speed Insights</a>.<br />
                                 P.S : Il est bien entendu https, mais aussi certifié sans cookies, car il n'en a tout simplement pas l'utilité.</p>
                             <ul>
-                                <li><a href="https://www.linkedin.com/in/anthonycavalloni/" aria-label="LinkedIn" rel="noopener"><i class="lni-linkedin-original" aria-hidden="true"></i></a></li>
-                                <li><a href="https://twitter.com/Gugulito_fr" aria-label="Twitter" rel="noopener"><i class="lni-twitter-original" aria-hidden="true"></i></a></li>
-                                <li><a href="https://github.com/gugul" aria-label="GitHub" rel="noopener"><i class="lni-github-original" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.instagram.com/gugulito69/" aria-label="Instagram" rel="noopener"><i class="lni-instagram-original" aria-hidden="true"></i></a></li>
-                                <li><a href="https://www.psthc.fr/profil-psn-Gugulito.htm" aria-label="Profil PSN" rel="noopener"><i class="lni-game" aria-hidden="true"></i></a></li>
-                                <li><a href="https://open.spotify.com/playlist/1IXLL2IR5UKmJcnIMZHQyR?si=dLfv4WkcTTSU0nn0tFEuKA" aria-label="Playlist Spotify" rel="noopener"><i class="lni-spotify-original" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/anthonycavalloni/" aria-label="LinkedIn" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+                                <li><a href="https://twitter.com/Gugulito_fr" aria-label="Twitter" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-twitter"/></svg></a></li>
+                                <li><a href="https://github.com/gugul" aria-label="GitHub" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+                                <li><a href="https://www.instagram.com/gugulito69/" aria-label="Instagram" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+                                <li><a href="https://www.psthc.fr/profil-psn-Gugulito.htm" aria-label="Profil PSN" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-game"/></svg></a></li>
+                                <li><a href="https://open.spotify.com/playlist/1IXLL2IR5UKmJcnIMZHQyR?si=dLfv4WkcTTSU0nn0tFEuKA" aria-label="Playlist Spotify" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-spotify"/></svg></a></li>
                             </ul>
                         </div> <!-- footer content -->
                     </div>
@@ -1083,7 +1099,7 @@
 
     <!--====== BACK TOP TOP PART START ======-->
 
-    <a href="#home" class="back-to-top page-scroll" aria-label="Retour en haut"><i class="lni-chevron-up" aria-hidden="true"></i></a>
+    <a href="#home" class="back-to-top page-scroll" aria-label="Retour en haut"><svg class="icon" aria-hidden="true"><use href="#i-chevron-up"/></svg></a>
 
     <!--====== BACK TOP TOP PART ENDS ======-->
 
