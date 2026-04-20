@@ -24,6 +24,9 @@
     <!--====== LCP hero preload ======-->
     <link rel="preload" as="image" href="assets/images/banner/anthony_cavalloni.webp" media="(min-width: 992px)" fetchpriority="high">
 
+    <!--====== Icon font preload (breaks critical chain) ======-->
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/LineIcons.woff2?y2l643" crossorigin>
+
     <!--====== Line Icons css ======-->
     <link rel="stylesheet" href="assets/css/LineIcons.css">
 
@@ -118,7 +121,7 @@
                 <img src="assets/images/banner/shape/shape-4.png" alt="" width="47" height="47" decoding="async">
             </div> <!-- header shape -->
             <div class="header-shape shape-seven layer" data-depth="0.50" aria-hidden="true">
-                <img src="assets/images/banner/shape/shape-5.png" alt="" width="195" height="195" decoding="async">
+                <img src="assets/images/banner/shape/shape-5.png" alt="" width="195" height="195" fetchpriority="high" decoding="async">
             </div> <!-- header shape -->
             <div class="header-shape shape-eight layer" data-depth="0.40" aria-hidden="true">
                 <img src="assets/images/banner/shape/shape-3.png" alt="" width="173" height="140" decoding="async">
