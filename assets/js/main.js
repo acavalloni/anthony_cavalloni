@@ -1,59 +1,80 @@
-(function($){
+(function() {
+  'use strict';
 
-    "use strict";
-
-    //===== Mobile Menu
-
-    $(".navbar-toggler").on('click', function() {
-        $(this).toggleClass('active');
+  // Mobile menu toggle
+  const toggler = document.querySelector('.navbar-toggler');
+  const collapse = document.querySelector('.navbar-collapse');
+  if (toggler && collapse) {
+    toggler.addEventListener('click', () => {
+      toggler.classList.toggle('active');
+      collapse.classList.toggle('show');
     });
+  }
 
-    $(".navbar-nav a").on('click', function() {
-        $(".navbar-toggler").removeClass('active');
-        $(".navbar-collapse").removeClass("show");
+  // Close menu when nav link clicked
+  document.querySelectorAll('.navbar-nav a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (toggler) toggler.classList.remove('active');
+      if (collapse) collapse.classList.remove('show');
     });
+  });
 
+  // Sticky navigation on scroll
+  const nav = document.querySelector('.navigation');
+  const backTop = document.querySelector('.back-to-top');
+  const scrollLinks = document.querySelectorAll('.page-scroll');
 
-    //===== Sticky navigation
-
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() < 10) {
-            $(".navigation").removeClass("sticky");
-        } else {
-            $(".navigation").addClass("sticky");
-        }
-    });
-
-
-    //===== Active section link on scroll
-
-    var scrollLink = $('.page-scroll');
-    $(window).scroll(function() {
-        var scrollbarLocation = $(this).scrollTop();
-        scrollLink.each(function() {
-            var sectionOffset = $(this.hash).offset().top - 73;
-            if (sectionOffset <= scrollbarLocation) {
-                $(this).parent().addClass('active');
-                $(this).parent().siblings().removeClass('active');
-            }
+  const onScroll = () => {
+    const y = window.scrollY;
+    if (nav) nav.classList.toggle('sticky', y >= 10);
+    if (backTop) backTop.classList.toggle('show', y > 600);
+    scrollLinks.forEach(link => {
+      const target = document.querySelector(link.hash);
+      if (!target) return;
+      const offset = target.getBoundingClientRect().top + window.scrollY - 73;
+      if (offset <= y) {
+        link.parentElement.classList.add('active');
+        Array.from(link.parentElement.parentElement.children).forEach(li => {
+          if (li !== link.parentElement) li.classList.remove('active');
         });
+      }
     });
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
 
+  // Modal (replaces magnific-popup)
+  const openModal = (targetId) => {
+    const content = document.querySelector(targetId);
+    if (!content) return;
+    const overlay = document.createElement('div');
+    overlay.className = 'modal-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.innerHTML = '<div class="modal-container"><button class="modal-close" aria-label="Fermer" type="button">&times;</button><div class="modal-body"></div></div>';
+    overlay.querySelector('.modal-body').innerHTML = content.innerHTML;
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+    requestAnimationFrame(() => overlay.classList.add('open'));
 
-    //===== Magnific Popup
+    const close = () => {
+      overlay.classList.remove('open');
+      setTimeout(() => {
+        overlay.remove();
+        document.body.style.overflow = '';
+      }, 200);
+      document.removeEventListener('keydown', onKey);
+    };
+    const onKey = (e) => { if (e.key === 'Escape') close(); };
+    overlay.querySelector('.modal-close').addEventListener('click', close);
+    overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+    document.addEventListener('keydown', onKey);
+    overlay.querySelector('.modal-close').focus();
+  };
 
-    $('.image-popup').magnificPopup({type: 'image'});
-    $('.text-popup').magnificPopup({type: 'inline', midClick: true});
-
-
-    //===== Back to top
-
-    $(window).on('scroll', function() {
-        if ($(this).scrollTop() > 600) {
-            $('.back-to-top').fadeIn(200);
-        } else {
-            $('.back-to-top').fadeOut(200);
-        }
+  document.querySelectorAll('.text-popup').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      openModal(link.getAttribute('href'));
     });
-
-}(jQuery));
+  });
+})();

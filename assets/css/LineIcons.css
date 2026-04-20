@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'LineIcons';
   src:  url('../fonts/LineIcons.woff2?y2l643') format('woff2'),
-    url('../fonts/LineIcons.woff?y2l643') format('woff'),
-    url('../fonts/LineIcons.ttf?y2l643') format('truetype');
+    url('../fonts/LineIcons.woff?y2l643') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
